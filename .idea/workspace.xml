@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb201634-201a-4893-a5aa-5f5114497d70" name="Default" comment="Add UserProfileViewSet">
+    <list default="true" id="bb201634-201a-4893-a5aa-5f5114497d70" name="Default" comment="register UserProfileViewSet in urls">
+      <change afterPath="$PROJECT_DIR$/src/django_api/api/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/django_api/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django_api/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django_api/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ubuntu-xenial-16.04-cloudimg-console.log" beforeDir="false" afterPath="$PROJECT_DIR$/ubuntu-xenial-16.04-cloudimg-console.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +21,33 @@
     <session id="-1738269211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="633" />
-          <entry key="txt" value="4" />
+          <entry key="dummy" value="1" />
+          <entry key="py" value="1212" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="633" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Python" value="1212" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.file.extensions.open" />
-      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
@@ -52,11 +64,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="154" column="34" lean-forward="true" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
+            <state relative-caret-position="591">
+              <caret line="172" column="96" selection-start-line="172" selection-start-column="96" selection-end-line="172" selection-end-column="96" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
-                <marker date="1532903681000" expanded="true" signature="3978:4156" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/django_api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="315">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#644#676#0" expanded="true" />
@@ -74,13 +85,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/django_api/api/permissions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+              <folding>
+                <marker date="1533877015000" expanded="true" signature="92:97" ph="..." />
               </folding>
             </state>
           </provider>
@@ -89,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="435">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
                 <marker date="1532902306000" expanded="true" signature="284:289" ph="..." />
@@ -102,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
+            <state relative-caret-position="735">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
@@ -129,8 +152,10 @@
         <option value="$PROJECT_DIR$/src/django_api/api/admin.py" />
         <option value="$PROJECT_DIR$/src/django_api/django_api/urls.py" />
         <option value="$PROJECT_DIR$/src/django_api/api/serializers.py" />
-        <option value="$PROJECT_DIR$/src/django_api/api/views.py" />
         <option value="$PROJECT_DIR$/src/django_api/api/urls.py" />
+        <option value="$PROJECT_DIR$/src/django_api/api/permission.py" />
+        <option value="$PROJECT_DIR$/src/django_api/api/views.py" />
+        <option value="$PROJECT_DIR$/src/django_api/api/permissions.py" />
       </list>
     </option>
   </component>
@@ -259,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532903704897</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="register UserProfileViewSet in urls">
+      <created>1532903867117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532903867117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -297,7 +329,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add UserProfileSerializer" />
     <MESSAGE value="Add UserProfileViewSet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UserProfileViewSet" />
+    <MESSAGE value="register UserProfileViewSet in urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="register UserProfileViewSet in urls" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
@@ -331,27 +364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/django_api/django_api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#644#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/django_api/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/django_api/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="435">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <marker date="1532902306000" expanded="true" signature="284:289" ph="..." />
@@ -359,23 +375,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/django_api/api/views.py">
+    <entry file="file://$PROJECT_DIR$/src/django_api/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="154" column="34" lean-forward="true" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-            <marker date="1532903681000" expanded="true" signature="3978:4156" ph="..." />
-          </folding>
+        <state relative-caret-position="735">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/django_api/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_api/django_api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#644#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_api/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="172" column="96" selection-start-line="172" selection-start-column="96" selection-end-line="172" selection-end-column="96" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_api/api/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding>
+            <marker date="1533877015000" expanded="true" signature="92:97" ph="..." />
           </folding>
         </state>
       </provider>
