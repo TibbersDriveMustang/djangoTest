@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb201634-201a-4893-a5aa-5f5114497d70" name="Default" comment="register UserProfileViewSet in urls">
-      <change afterPath="$PROJECT_DIR$/src/django_api/api/permissions.py" afterDir="false" />
+    <list default="true" id="bb201634-201a-4893-a5aa-5f5114497d70" name="Default" comment="Added search function to user profile API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django_api/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/django_api/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/django_api/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/src/django_api/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ubuntu-xenial-16.04-cloudimg-console.log" beforeDir="false" afterPath="$PROJECT_DIR$/ubuntu-xenial-16.04-cloudimg-console.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,14 +27,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="py" value="1212" />
-          <entry key="txt" value="21" />
+          <entry key="py" value="1754" />
+          <entry key="txt" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="1212" />
+          <entry key="PLAIN_TEXT" value="129" />
+          <entry key="Python" value="1754" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,10 +63,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="172" column="96" selection-start-line="172" selection-start-column="96" selection-end-line="172" selection-end-column="96" />
+            <state relative-caret-position="651">
+              <caret line="191" column="45" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
+                <marker date="1534042313000" expanded="true" signature="4723:4728" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_api/api/permissions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="180">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <marker date="1533877015000" expanded="true" signature="92:97" ph="..." />
               </folding>
@@ -152,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/django_api/api/admin.py" />
         <option value="$PROJECT_DIR$/src/django_api/django_api/urls.py" />
         <option value="$PROJECT_DIR$/src/django_api/api/serializers.py" />
-        <option value="$PROJECT_DIR$/src/django_api/api/urls.py" />
         <option value="$PROJECT_DIR$/src/django_api/api/permission.py" />
-        <option value="$PROJECT_DIR$/src/django_api/api/views.py" />
         <option value="$PROJECT_DIR$/src/django_api/api/permissions.py" />
+        <option value="$PROJECT_DIR$/src/django_api/api/views.py" />
+        <option value="$PROJECT_DIR$/src/django_api/api/urls.py" />
       </list>
     </option>
   </component>
@@ -291,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532903867117</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add permissions and authentication to our UserProfileViewSet">
+      <created>1533877087541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533877087542</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added search function to user profile API">
+      <created>1534041923758</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534041923759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -330,7 +344,9 @@
     <MESSAGE value="Add UserProfileSerializer" />
     <MESSAGE value="Add UserProfileViewSet" />
     <MESSAGE value="register UserProfileViewSet in urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="register UserProfileViewSet in urls" />
+    <MESSAGE value="Add permissions and authentication to our UserProfileViewSet" />
+    <MESSAGE value="Added search function to user profile API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search function to user profile API" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
@@ -382,12 +398,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/django_api/api/urls.py">
+    <entry file="file://$PROJECT_DIR$/src/django_api/api/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1533877015000" expanded="true" signature="92:97" ph="..." />
           </folding>
         </state>
       </provider>
@@ -404,20 +420,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/django_api/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="172" column="96" selection-start-line="172" selection-start-column="96" selection-end-line="172" selection-end-column="96" />
+        <state relative-caret-position="651">
+          <caret line="191" column="45" selection-start-line="191" selection-start-column="45" selection-end-line="191" selection-end-column="45" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
+            <marker date="1534042313000" expanded="true" signature="4723:4728" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/django_api/api/permissions.py">
+    <entry file="file://$PROJECT_DIR$/src/django_api/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
-            <marker date="1533877015000" expanded="true" signature="92:97" ph="..." />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

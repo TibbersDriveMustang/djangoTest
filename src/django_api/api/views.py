@@ -9,6 +9,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
+from rest_framework.authtoken.serializers import AuthTokenSerializer
+from rest_framework.authtoken.views import ObtainAuthToken
 
 from . import serializers
 from . import models
@@ -174,3 +176,17 @@ class UserProfileViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.UpdateOwnProfile, )   ## Could assign multiple permissions
     filter_backends = (filters.SearchFilter,)
     search_fields = ('name', 'email',)
+
+class LoginViewSet(viewsets.ViewSet):
+    """
+    Checks email and password and return an auth token
+    """
+    serializer_class = AuthTokenSerializer
+
+    def create(self, request):
+        """
+        Use the ObtainAuthToken APIView to validate and create a token
+        :param request:
+        :return:
+        """
+        return ObtainAuthToken().post(request)
