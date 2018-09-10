@@ -4,10 +4,15 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="3">
+          <list size="8">
             <item index="0" class="java.lang.String" itemvalue="Django" />
             <item index="1" class="java.lang.String" itemvalue="pytz" />
             <item index="2" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="3" class="java.lang.String" itemvalue="appdirs" />
+            <item index="4" class="java.lang.String" itemvalue="six" />
+            <item index="5" class="java.lang.String" itemvalue="packaging" />
+            <item index="6" class="java.lang.String" itemvalue="uWSGI" />
+            <item index="7" class="java.lang.String" itemvalue="pyparsing" />
           </list>
         </value>
       </option>
